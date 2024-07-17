@@ -14,11 +14,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 @Mod(MinuTweaks.MOD_ID)
-public class MinuTweaks
-{
-
+public class MinuTweaks {
     public static final String MOD_ID = "minutweaks";
-
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public MinuTweaks() {
