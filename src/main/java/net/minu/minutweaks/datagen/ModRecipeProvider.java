@@ -41,7 +41,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ZEPHYRITE.get()), has(ModItems.ZEPHYRITE.get()))
                 .save(consumer);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZEPHYRITE.get(), 999)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZEPHYRITE.get(), 9)
                 .requires(ModBlocks.ZEPHYRITE_ORE.get())
                 .unlockedBy(getHasName(ModBlocks.ZEPHYRITE_ORE.get()), has(ModBlocks.ZEPHYRITE_ORE.get()))
                 .save(consumer);
