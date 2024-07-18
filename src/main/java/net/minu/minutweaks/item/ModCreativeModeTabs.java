@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.minu.minutweaks.MinuTweaks;
+import net.minu.minutweaks.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.minutweaks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ZEPHYRITE.get());
+                        output.accept(ModBlocks.ZEPHYRITE_ORE.get());
                     })
                     .build());
 

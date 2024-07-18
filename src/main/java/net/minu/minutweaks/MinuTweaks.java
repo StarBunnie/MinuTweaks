@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minu.minutweaks.block.ModBlocks;
 import net.minu.minutweaks.item.ModCreativeModeTabs;
 import net.minu.minutweaks.item.ModItems;
 import org.slf4j.Logger;
@@ -28,6 +29,8 @@ public class MinuTweaks {
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
