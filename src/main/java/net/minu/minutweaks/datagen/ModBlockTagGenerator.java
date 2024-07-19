@@ -21,12 +21,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.ZEPHYRITE_BLOCKS)
-                .add(ModBlocks.ZEPHYRITE_ORE.get()).addTags(Tags.Blocks.ORES);
+                .add(ModBlocks.STONE_ZEPHYRITE_ORE.get()).addTags(Tags.Blocks.ORES);
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(ModBlocks.ZEPHYRITE_ORE.get());
+                .add(ModBlocks.STONE_ZEPHYRITE_ORE.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.ZEPHYRITE_ORE.get());
+                .add(ModBlocks.STONE_ZEPHYRITE_ORE.get());
     }
 }

@@ -20,7 +20,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private static final List<ItemLike> ZEPHYRITE_SMELTABLES = List.of(
             ModItems.ZEPHYRITE.get(),
-            ModBlocks.ZEPHYRITE_ORE.get()
+            ModBlocks.STONE_ZEPHYRITE_ORE.get()
     );
 
     public ModRecipeProvider(PackOutput pOutput) {
@@ -32,7 +32,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, ZEPHYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHYRITE.get(), 0.75f, 200, "zephyrite");
         oreSmelting(consumer, ZEPHYRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ZEPHYRITE.get(), 0.75f, 300, "zephyrite");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZEPHYRITE_ORE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STONE_ZEPHYRITE_ORE.get())
                 .pattern("###")
                 .pattern("#D#")
                 .pattern("###")
@@ -42,8 +42,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZEPHYRITE.get(), 9)
-                .requires(ModBlocks.ZEPHYRITE_ORE.get())
-                .unlockedBy(getHasName(ModBlocks.ZEPHYRITE_ORE.get()), has(ModBlocks.ZEPHYRITE_ORE.get()))
+                .requires(ModBlocks.STONE_ZEPHYRITE_ORE.get())
+                .unlockedBy(getHasName(ModBlocks.STONE_ZEPHYRITE_ORE.get()), has(ModBlocks.STONE_ZEPHYRITE_ORE.get()))
                 .save(consumer);
     }
 

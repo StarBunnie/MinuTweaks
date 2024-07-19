@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.minutweaks_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ZEPHYRITE.get());
-                        output.accept(ModBlocks.ZEPHYRITE_ORE.get());
+                        output.accept(ModBlocks.STONE_ZEPHYRITE_ORE.get());
                     })
                     .build());
 

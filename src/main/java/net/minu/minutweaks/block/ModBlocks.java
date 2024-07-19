@@ -20,8 +20,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MinuTweaks.MOD_ID);
 
-    public static final RegistryObject<Block> ZEPHYRITE_ORE = registerBlock("zephyrite_ore",
-            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
+    public static final RegistryObject<Block> STONE_ZEPHYRITE_ORE = registerBlock("stone_zephyrite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
                     .strength(10f).requiresCorrectToolForDrops(), UniformInt.of(6, 8)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

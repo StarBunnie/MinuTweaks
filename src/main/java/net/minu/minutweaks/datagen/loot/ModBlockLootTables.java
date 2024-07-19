@@ -25,8 +25,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         //this.dropSelf(ModBlocks.ZEPHYRITE_ORE.get());
 
-        this.add(ModBlocks.ZEPHYRITE_ORE.get(),
-                block -> createModdedOreDrops(ModBlocks.ZEPHYRITE_ORE.get(), ModItems.ZEPHYRITE.get(), 1.0F, 1.2F));
+        this.add(ModBlocks.STONE_ZEPHYRITE_ORE.get(),
+                block -> createModdedOreDrops(ModBlocks.STONE_ZEPHYRITE_ORE.get(), ModItems.ZEPHYRITE.get(), 1.0F, 1.2F));
     }
 
     protected LootTable.Builder createModdedOreDrops(Block pBlock, Item item, Float countMin, Float countMax) {

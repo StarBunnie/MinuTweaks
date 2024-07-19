@@ -15,7 +15,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.ZEPHYRITE_ORE);
+        blockWithItem(ModBlocks.STONE_ZEPHYRITE_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
